@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Estilizada</title>
+    <style>
+        /* Estilos generales para la lista */
+        ul {
+            list-style-type: none; /* Elimina los puntos de la lista */
+            padding: 0; /* Elimina el relleno de la lista */
+        }
+
+        /* Estilos para los elementos de la lista */
+        li {
+            background-color: #f0f0f0; /* Fondo claro para cada artículo */
+            margin: 10px 0; /* Márgenes superior e inferior */
+            padding: 15px; /* Relleno interno */
+            font-size: 1.2em; /* Tamaño de la fuente */
+            border: 2px solid #4CAF50; /* Borde verde alrededor de cada artículo */
+            border-radius: 8px; /* Bordes redondeados */
+        }
+
+        /* Estilos para los íconos de la lista */
+        li::before {
+            content: "✔"; /* Ícono de marca de verificación */
+            color: #4CAF50; /* Color verde para el ícono */
+            font-size: 1.5em; /* Aumentar el tamaño del ícono */
+            margin-right: 10px; /* Espacio entre el ícono y el texto */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Lista desordenada -->
+    <ul>
+        <li>Primero artículo</li>
+        <li>Segundo artículo</li>
+        <li>Tercer artículo</li>
+        <li>Cuarto artículo</li>
+        <li>Quinto artículo</li>
+    </ul>
+
+</body>
+</html>

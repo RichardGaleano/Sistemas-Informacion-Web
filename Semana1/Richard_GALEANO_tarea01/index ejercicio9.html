@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Estilizada</title>
+    <style>
+        /* Estilos generales para la tabla */
+        table {
+            width: 80%; /* Ancho de la tabla */
+            margin: 20px auto; /* Centrado de la tabla */
+            border-collapse: collapse; /* Elimina los espacios entre celdas */
+        }
+
+        /* Estilos para las celdas de la tabla */
+        th, td {
+            border: 1px solid #ddd; /* Borde gris claro alrededor de las celdas */
+            padding: 12px; /* Relleno interno */
+            text-align: left; /* Alineación del texto a la izquierda */
+        }
+
+        /* Estilo para las cabeceras */
+        th {
+            background-color: #4CAF50; /* Fondo verde para la cabecera */
+            color: white; /* Color de texto blanco */
+            font-size: 1.1em; /* Tamaño de fuente ligeramente más grande */
+        }
+
+        /* Estilo para las filas alternas */
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Fondo gris claro para las filas pares */
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ffffff; /* Fondo blanco para las filas impares */
+        }
+
+        /* Estilo para las filas al pasar el mouse */
+        tr:hover {
+            background-color: #ddd; /* Fondo gris oscuro cuando el mouse pasa por encima */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Tabla con datos -->
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana</td>
+                <td>25</td>
+                <td>Madrid</td>
+            </tr>
+            <tr>
+                <td>Luis</td>
+                <td>30</td>
+                <td>Barcelona</td>
+            </tr>
+            <tr>
+                <td>Carla</td>
+                <td>28</td>
+                <td>Valencia</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
